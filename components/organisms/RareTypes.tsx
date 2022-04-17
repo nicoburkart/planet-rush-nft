@@ -17,7 +17,7 @@ export const RareTypes = () => {
       />
       <Container>
         <div className="mb-10 text-center">
-          <Title>Planet Types</Title>
+          <Title>Rare Types</Title>
           <hr className="mx-auto h-1 w-14 rounded-full border-0 bg-gradient-to-r from-primary to-secondary" />
         </div>
         <div className="flex w-full flex-col justify-between sm:flex-row">

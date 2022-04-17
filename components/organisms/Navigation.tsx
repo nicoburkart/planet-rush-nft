@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { NavigationItems } from '../molecules/NavigationItems';
+import { WalletConnector } from '../molecules/WalletConnector';
 import { Container } from '../templates/Container';
 
 export const Navigation = () => {
@@ -11,11 +12,11 @@ export const Navigation = () => {
       <nav className="py-4">
         <Container>
           <div className="flex h-16 w-full items-center justify-between">
-            <div className="flex items-center px-4 md:pl-0 ">
+            <div className="flex w-full items-center ">
               <Link href={'/'}>
                 <a className="flex flex-row items-center justify-center">
                   <div className="h-10 w-10 rounded-full bg-gradient-to-br from-primary to-secondary"></div>
-                  <h1 className="title-font ml-4 hidden text-zinc-50 text-xl font-bold md:block">
+                  <h1 className="title-font ml-4 hidden text-xl font-bold text-zinc-50 md:block">
                     PlanetRush
                   </h1>
                 </a>
@@ -23,6 +24,7 @@ export const Navigation = () => {
               <div className="hidden md:block">
                 <NavigationItems></NavigationItems>
               </div>
+              <WalletConnector className="ml-auto"></WalletConnector>
             </div>
             <div className="flex md:hidden">
               <button

@@ -9,9 +9,7 @@ export const Title = ({ children, className }: Props) => {
   return (
     <h1
       className={
-        'mb-4 font-michroma text-4xl font-normal text-zinc-50 lg:text-5xl' +
-        ' ' +
-        className
+        'mb-4 font-michroma text-4xl font-normal text-zinc-50' + ' ' + className
       }
     >
       {children}
@@ -23,7 +21,7 @@ export const SubTitle = ({ children, className }: Props) => {
   return (
     <h2
       className={
-        'title-font mb-3 text-lg font-semibold text-zinc-50' + ' ' + className
+        'title-font mb-2 text-lg font-bold text-zinc-50' + ' ' + className
       }
     >
       {children}

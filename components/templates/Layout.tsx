@@ -19,7 +19,17 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
 
     <Navigation></Navigation>
     {children}
-    <ToastContainer />
+    <ToastContainer
+      position="bottom-right"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+    />
 
     <Footer></Footer>
   </div>

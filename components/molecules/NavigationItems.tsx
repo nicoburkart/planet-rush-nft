@@ -12,26 +12,21 @@ export const NavigationItems = ({ setNavOpen }: Props) => {
   return (
     <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3 md:ml-10 md:flex md:items-baseline md:space-x-4">
       <NavigationItem
-        title="Home"
-        active={router.pathname === ''}
+        title="Mint"
+        active={router.pathname === '#mint'}
+        href="mint"
         setNavOpen={setNavOpen}
       ></NavigationItem>
       <NavigationItem
-        title="Service"
-        active={router.pathname === '#service'}
-        href="service"
+        title="Roadmap"
+        active={router.pathname === '#roadmap'}
+        href="roadmap"
         setNavOpen={setNavOpen}
       ></NavigationItem>
       <NavigationItem
-        title="Team"
-        active={router.pathname === '#team'}
-        href="team"
-        setNavOpen={setNavOpen}
-      ></NavigationItem>
-      <NavigationItem
-        title="Our Work"
-        active={router.pathname === '#work'}
-        href="work"
+        title="Open Sea"
+        active={router.pathname === '#opensea'}
+        href="opensea"
         setNavOpen={setNavOpen}
       ></NavigationItem>
     </div>

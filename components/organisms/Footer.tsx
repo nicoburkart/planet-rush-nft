@@ -1,20 +1,29 @@
 import Link from 'next/link';
+import { toast } from 'react-toastify';
 import { PrimaryButton } from '../atoms/Buttons';
 import { Title } from '../atoms/Typography';
+import { LinkCollection } from '../molecules/LinkCollection';
 import { Container } from '../templates/Container';
 
 export const Footer = () => {
   return (
-    <footer className="body-font relative mt-24 bg-[url('/assets/images/slope-bg-linear.svg')] bg-cover bg-top text-zinc-50">
+    <footer className="body-font relative mt-24 bg-[url('/images/footer-background.svg')] bg-cover bg-top text-zinc-50">
       <Container className="relative pt-48 pb-8">
         <div className="flex flex-col items-center space-y-6 pb-24">
-          <Title className="lg:text-3xl xl:text-5xl text-center">
+          <Title className="text-center lg:text-3xl xl:text-5xl">
             Build Your{' '}
             <span className="bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent">
               Empire
             </span>
           </Title>
-          <PrimaryButton>Test Alpha</PrimaryButton>
+          <PrimaryButton
+            onClick={() => {
+              toast('🚀 Coming soon!');
+            }}
+          >
+            Test Alpha
+          </PrimaryButton>
+          <LinkCollection></LinkCollection>
         </div>
 
         <div className="flex w-full flex-col sm:flex-row">

@@ -5,12 +5,19 @@ type Props = {
   title: string;
   href?: string;
   active: boolean;
+  anker?: boolean;
   setNavOpen?: Dispatch<SetStateAction<boolean>>;
 };
 
-export const NavigationItem = ({ title, active, href, setNavOpen }: Props) => {
+export const NavigationItem = ({
+  title,
+  active,
+  href,
+  anker,
+  setNavOpen,
+}: Props) => {
   return (
-    <Link href={`${href ? '#' + href : '/'}`}>
+    <Link href={`${anker ? '#' + href : '/' + href}`}>
       <a
         onClick={() => {
           if (setNavOpen) {

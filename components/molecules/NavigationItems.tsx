@@ -13,12 +13,13 @@ export const NavigationItems = ({ setNavOpen }: Props) => {
     <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3 md:ml-10 md:flex md:items-baseline md:space-x-4">
       <NavigationItem
         title="Mint"
-        active={router.pathname === '#mint'}
+        active={router.pathname === '/mint'}
         href="mint"
         setNavOpen={setNavOpen}
       ></NavigationItem>
       <NavigationItem
         title="Roadmap"
+        anker={true}
         active={router.pathname === '#roadmap'}
         href="roadmap"
         setNavOpen={setNavOpen}

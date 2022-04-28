@@ -20,7 +20,7 @@ export const HowItWorks = () => {
           src={'/images/dotted-background.svg'}
           alt=""
         />
-        <Container className="space-y-8 rounded bg-[#979DC6] py-32 px-12 lg:flex-row lg:space-y-0 lg:space-x-8 lg:rounded-full">
+        <Container className="space-y-8 rounded bg-[#979DC6] py-32 px-12 lg:flex-row lg:space-y-0 lg:space-x-8 lg:rounded-full lg:px-20">
           <HiwStep
             title="Mint a Planet"
             desc="Check the planet types and their chances and minerals below"

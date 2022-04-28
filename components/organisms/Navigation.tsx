@@ -9,7 +9,7 @@ export const Navigation = () => {
 
   return (
     <header>
-      <nav className="py-4">
+      <nav className="relative z-40 py-4">
         <Container>
           <div className="flex h-16 w-full items-center justify-between">
             <div className="flex w-full items-center ">
@@ -33,12 +33,12 @@ export const Navigation = () => {
               >
                 <div className="flex w-8 flex-col items-end">
                   <span
-                    className={`block h-1 w-full rounded-full bg-zinc-800 transition-all ${
+                    className={`block h-1 w-full rounded-full bg-zinc-50 transition-all ${
                       navOpen ? 'translate-y-1 -rotate-45' : 'mb-2'
                     }`}
                   ></span>
                   <span
-                    className={`block h-1 rounded-full bg-zinc-800 transition-all ${
+                    className={`block h-1 rounded-full bg-zinc-50 transition-all ${
                       navOpen ? 'w-full rotate-45' : 'w-2/3'
                     }`}
                   ></span>
@@ -50,7 +50,7 @@ export const Navigation = () => {
           <div
             className={`left- fixed top-0 z-40 flex h-full w-full flex-col items-center justify-center text-center transition-all ${
               navOpen
-                ? 'bg-gradient-to-br from-gray-50 to-purple-50'
+                ? 'bg-gradient-to-br from-blue-800 to-purple-700'
                 : 'hidden' + ' md:hidden'
             }`}
           >
